@@ -30,5 +30,8 @@ Logical view:
 | PSTRB       | Write strobes. This signal indicates which byte lanes to update during a write transfer. There is one write strobe for each eight bits of the write data bus. Strobe must not be active during read | Yes       | Slave  |
 | PPROT       | Protection type. This signal indicates the normal, privileged, or secure protection level of the tansaction and whether the transaction is a data access or an instruction access.   | Yes       | Slave  |
 
-
-
+# Protection unit support
+| PPROT[2:0] | Protection Level |
+|------------|------------------|
+| [0]        | 1 = Privileged access |
+               0 = normal access      
