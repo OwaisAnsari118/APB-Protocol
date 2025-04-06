@@ -33,5 +33,4 @@ Logical view:
 # Protection unit support
 | PPROT[2:0] | Protection Level |
 |------------|------------------|
-| [0]        | 1 = Privileged access 
-               0 = normal access|
+| [0]        | 1 = Privileged access 0 = normal access|
