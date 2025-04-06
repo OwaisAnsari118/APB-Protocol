@@ -15,7 +15,7 @@ Logical view:
 ![Screenshot 2025-04-04 162523](https://github.com/user-attachments/assets/1a5782c9-8f59-4e90-9fb5-611084e9d65a)
 
 # APB signal definations
-| Signal Name      | Description                                                   | Per Slave | Source |
+| Signal Name | Description                                                   | Per Slave | Source |
 |-------------|---------------------------------------------------------------|-----------|--------|
 | PCLK        | The bus clock source (rising-edge triggered)                  | No        | System |
 | PRESETn     | The bus (and typically system) reset signal (active low)      | No        | System |
@@ -27,7 +27,8 @@ Logical view:
 | PREADY      | Used to extend a transfer                                     | Yes       | Slave  |
 | PRDATA      | The read data bus (can be up to 32-bits wide)                 | Yes       | Slave  |
 | PSLVERR     | Indicates a tranfer error (OKAY = 0, ERROR = 1)               | Yes       | Slave  |
-| PSTRB       | Write strobes. This signal indicates which byte lanes to update during a write transfer. There is one write strobe for each eight bits of the write data bus. Strobe must not be active during read                               | Yes       | Slave  |
+| PSTRB       | Write strobes. This signal indicates which byte lanes to update during a write transfer. 
+                There is one write strobe for each eight bits of the write data bus. Strobe must not be active during read | Yes       | Slave  |
 
 
 
