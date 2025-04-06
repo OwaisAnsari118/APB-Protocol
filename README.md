@@ -15,7 +15,7 @@ Logical view:
 ![Screenshot 2025-04-04 162523](https://github.com/user-attachments/assets/1a5782c9-8f59-4e90-9fb5-611084e9d65a)
 
 # APB signal definations
-| Signal Name | Description                                                   | Per Slave | Source |
+| Signal Name      | Description                                                   | Per Slave | Source |
 |-------------|---------------------------------------------------------------|-----------|--------|
 | PCLK        | The bus clock source (rising-edge triggered)                  | No        | System |
 | PRESETn     | The bus (and typically system) reset signal (active low)      | No        | System |
