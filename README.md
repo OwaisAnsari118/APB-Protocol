@@ -47,3 +47,6 @@ Logical view:
   - Multiplexes PREADY, PRDATA, PSLVERR
   - The upper four address bits driven by the master are decoded to produce the select signals for the 16 slave slots, regardless of the master address bus width.
 
+# APB Timing waveform notations
+![Screenshot 2025-04-06 233037](https://github.com/user-attachments/assets/52b8052c-ac0a-4f0f-9002-dfdef43bdabe)
+
