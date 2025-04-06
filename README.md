@@ -50,3 +50,6 @@ Logical view:
 # APB Timing waveform notations
 ![Screenshot 2025-04-06 233037](https://github.com/user-attachments/assets/52b8052c-ac0a-4f0f-9002-dfdef43bdabe)
 
+# APB State Machine
+
+
