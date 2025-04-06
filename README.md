@@ -27,8 +27,7 @@ Logical view:
 | PREADY      | Used to extend a transfer                                     | Yes       | Slave  |
 | PRDATA      | The read data bus (can be up to 32-bits wide)                 | Yes       | Slave  |
 | PSLVERR     | Indicates a tranfer error (OKAY = 0, ERROR = 1)               | Yes       | Slave  |
-| PSTRB       | Write strobes. This signal indicates which byte lanes to update during a write transfer. 
-                There is one write strobe for each eight bits of the write data bus. Strobe must not be active during read | Yes       | Slave  |
+| PSTRB       | Write strobes. This signal indicates which byte lanes to update during a write transfer. There is one write strobe for each eight bits of the write data bus. Strobe must not be active during read | Yes       | Slave  |
 
 
 
