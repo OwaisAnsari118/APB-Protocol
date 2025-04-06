@@ -1,7 +1,7 @@
 # APB-Protocol
 # Why APB?
-* Low-cost
-* Low-power
+- Low-cost
+- Low-power
 * Low-complexity
 * Non-pipelined
 * Ideal for peripherals
