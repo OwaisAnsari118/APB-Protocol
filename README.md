@@ -31,6 +31,8 @@ Logical view:
 | PPROT       | Protection type. This signal indicates the normal, privileged, or secure protection level of the tansaction and whether the transaction is a data access or an instruction access.   | Yes       | Slave  |
 
 # Protection unit support
-| PPROT[2:0] | Protection Level |
-|------------|------------------|
-| [0]        | 1 = Privileged access                                                            0 = normal access|
+| PPROT[2:0] | Protection Level                          |
+|------------|-------------------------------------------| 
+| [0]        | 1 = Privileged access,  0 = normal access |
+| [1]        | 1 = nonsecure access,   0 = secure access |
+| [2]        | 1 = instruction access, 0 = data access   |  
