@@ -41,7 +41,7 @@ Logical view:
 ![Screenshot 2025-04-06 231935](https://github.com/user-attachments/assets/ae8fe979-9579-46f6-a678-b1ff53b33a46)
 * ARM APB sepcification is silent about multiple slave connection
 * Allocates per-slave signals
-  * CoreAPB3 support 16 slaves
+  - CoreAPB3 support 16 slaves
   - Performs address decoding for PSEL
   - De-multiplexes PSEL signal
   - Multiplexes PREADY, PRDATA, PSLVERR
