@@ -36,3 +36,14 @@ Logical view:
 | [0]        | 1 = Privileged access,  0 = normal access |
 | [1]        | 1 = nonsecure access,   0 = secure access |
 | [2]        | 1 = instruction access, 0 = data access   |  
+
+# Actel CoreAPB3 - Single Master and Multiple Slaves.
+![Screenshot 2025-04-06 231935](https://github.com/user-attachments/assets/ae8fe979-9579-46f6-a678-b1ff53b33a46)
+* ARM APB sepcification is silent about multiple slave connection
+* Allocates per-slave signals
+  - CoreAPB3 support 16 slaves
+  - Performs address decoding for PSEL
+  - De-multiplexes PSEL signal
+  - Multiplexes PREADY, PRDATA, PSLVERR
+  - The upper four address bits driven by the master are decoded to produce the select signals for the 16 slave slots, regardless of the master address bus width.
+
