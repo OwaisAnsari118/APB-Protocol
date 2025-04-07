@@ -53,3 +53,15 @@ Logical view:
 # APB State Machine
 ![Screenshot 2025-04-07 000148](https://github.com/user-attachments/assets/5079f16e-10ad-4752-ad03-8c2d3b0d788e)
 
+* IDLE
+  - Default APB state
+* SETUP
+  - When transfer required
+  - PSELx is asserted
+  - Only one cycle
+* ACCESS
+  - PENABLE is asserted
+  - Addr, write, select, and write data remain stable
+  - Stay if PREADY = 0
+  - Goto IDLE if PREADY = 1 and no more data
+  - Goto IDLE if PREADY = 1 and more data pending
