@@ -51,5 +51,5 @@ Logical view:
 ![Screenshot 2025-04-06 233037](https://github.com/user-attachments/assets/52b8052c-ac0a-4f0f-9002-dfdef43bdabe)
 
 # APB State Machine
-
+![Screenshot 2025-04-07 000148](https://github.com/user-attachments/assets/5079f16e-10ad-4752-ad03-8c2d3b0d788e)
 
