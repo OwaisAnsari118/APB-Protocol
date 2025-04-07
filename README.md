@@ -88,3 +88,7 @@ Because APB is a simple, low-bandwidth bus protocol designed for communication w
 * In APB, the transfer is always completed in a fixed number of clock cycles.
 * The slave must respond with data or status in a defined timing.
 
+# A write transfer with wait states
+![Screenshot 2025-04-07 165351](https://github.com/user-attachments/assets/25d02705-dec1-41e8-8350-84dc9449e10c)
+
+
