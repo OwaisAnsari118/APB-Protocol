@@ -69,7 +69,7 @@ Logical view:
 # APB Waveform
 ![Screenshot 2025-04-07 133316](https://github.com/user-attachments/assets/942ca26c-7f33-4696-b692-ffdf71d8ad6b)
 
-# Why APB takes so many clocks for transfer
+# Why APB takes so many clocks for transfer?
 
 * When the transfer begins from IDLE, it takes 3 clocks to complete without any backpressure from slave
 * When there are back to back transfers it still takes 2 clocks to complete without any backpressure from slave
@@ -80,6 +80,8 @@ Logical view:
 * 2 cycle timing gives simplest minimum logic that is easy to constrain and synthesize
 * Although control information is captured during setup phase still maintained in access phase because APB is not pipelined bus so there is no reason to change
 
-
+# What is Backpressure?
+Backpressure is a flow control mechanism used in bus protocols (like AXI, AHB) where a slave can slow down or stall the master by asserting a signal (like READY, VALID, or WAIT) if it’s not ready to proceed with data transfer.
+**Backpressure = Receiver telling sender: “Hold on, I’m not ready yet!”**
 
 
