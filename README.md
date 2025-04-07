@@ -81,7 +81,10 @@ Logical view:
 * Although control information is captured during setup phase still maintained in access phase because APB is not pipelined bus so there is no reason to change
 
 # What is Backpressure?
-Backpressure is a flow control mechanism used in bus protocols (like AXI, AHB) where a slave can slow down or stall the master by asserting a signal (like READY, VALID, or WAIT) if it’s not ready to proceed with data transfer.
-**Backpressure = Receiver telling sender: “Hold on, I’m not ready yet!”**
+Backpressure is a flow control mechanism used in bus protocols (like AXI, AHB) where a slave can slow down or stall the master by asserting a signal (like READY, VALID, or WAIT) if it’s not ready to proceed with data transfer. **Backpressure = Receiver telling sender: “Hold on, I’m not ready yet!”**
 
+# Why APB Doesn't Use Backpressure?
+Because APB is a simple, low-bandwidth bus protocol designed for communication with slow peripherals (like UART, GPIO, Timers, etc.). It follows a non-pipelined, non-burst transaction model. 
+* In APB, the transfer is always completed in a fixed number of clock cycles.
+* The slave must respond with data or status in a defined timing.
 
