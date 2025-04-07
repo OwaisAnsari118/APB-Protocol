@@ -91,4 +91,15 @@ Because APB is a simple, low-bandwidth bus protocol designed for communication w
 # A write transfer with wait states
 ![Screenshot 2025-04-07 165351](https://github.com/user-attachments/assets/25d02705-dec1-41e8-8350-84dc9449e10c)
 
+# A read transfer with no wait states
+![Screenshot 2025-04-07 165832](https://github.com/user-attachments/assets/8e1a1cae-ac10-4c73-b5a2-fb878d71a554)
+
+# A read transfer with wait states
+![Screenshot 2025-04-07 170026](https://github.com/user-attachments/assets/e28c318a-e48d-4858-bb16-7c713eb7195c)
+
+# Error response - Failing write 
+![Screenshot 2025-04-07 175753](https://github.com/user-attachments/assets/f25e892f-2d02-492f-8118-a90ca9f0bd2e)
+**Optional: PSLVERR** is only considered valid during the last cycle of an APB transfer, when **PSEL, PENABLE, and PREADY** are all HIGH.
+
+
 
