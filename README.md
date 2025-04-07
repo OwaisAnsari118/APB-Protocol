@@ -65,3 +65,21 @@ Logical view:
   - Stay if PREADY = 0
   - Goto IDLE if PREADY = 1 and no more data
   - Goto IDLE if PREADY = 1 and more data pending
+
+# APB Waveform
+![Screenshot 2025-04-07 133316](https://github.com/user-attachments/assets/942ca26c-7f33-4696-b692-ffdf71d8ad6b)
+
+# Why APB takes so many clocks for transfer
+
+* When the transfer begins from IDLE, it takes 3 clocks to complete without any backpressure from slave
+* When there are back to back transfers it still takes 2 clocks to complete without any backpressure from slave
+* APB is mainly targeted to supporting very simple interfaces with SRAM type timing where you have 2 step access
+  - Address and control in the first clock
+  - Data transfer in the second clock
+* Single clock if both the steps are implemented results in lot of combinational logic
+* 2 cycle timing gives simplest minimum logic that is easy to constrain and synthesize
+* Although control information is captured during setup phase still maintained in access phase because APB is not pipelined bus so there is no reason to change
+
+
+
+
